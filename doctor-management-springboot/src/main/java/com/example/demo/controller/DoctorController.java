@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/doctors") // Base URL matches the frontend's API_URL 
-@CrossOrigin(origins = "http://localhost:5173") // Allow requests from your React development server
+@CrossOrigin("*") 
 public class DoctorController {
 
     @Autowired
