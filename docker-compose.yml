@@ -18,7 +18,7 @@ services:
       retries: 10
 
   backend:
-    image: mounikav24/docker-tasksbackend:latest
+    image: mounikav24/docker-doctorbackend:latest
     container_name: springboot
     ports:
       - "3003:3000"
@@ -31,7 +31,7 @@ services:
     
 
   frontend:
-    image: mounikav24/docker-tasksfrontend:latest
+    image: mounikav24/docker-doctorfrontend:latest
     container_name: react
     ports:
       - "8004:80"
